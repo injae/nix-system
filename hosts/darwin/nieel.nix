@@ -15,7 +15,7 @@
 
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
-  home-manager.users.nieel = {pkgs, ...}: {
+  home-manager.users.darwin = {pkgs, ...}: {
     home.username = "nieel";
     home.homeDirectory = "/Users/nieel";
     home.packages = with pkgs; [
