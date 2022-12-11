@@ -33,6 +33,8 @@ in {
       tealdeer
       whois
       zsh
+      rnix-lsp
+      home-manager
     ];
 
     # Starship is a fast and featureful shell prompt
