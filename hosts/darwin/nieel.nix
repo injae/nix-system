@@ -13,8 +13,13 @@
     mas
   ];
 
+  home-manager.useGlobalPkgs = true;
+  home-manager.useUserPackages = true;
   home-manager.users.nieel = {pkgs, ...}: {
     home.packages = with pkgs; [
+
     ];
+    home.stateVersion = "22.11";
+    programs.home-manager.enable = true;
   };
 }
