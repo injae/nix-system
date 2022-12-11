@@ -49,6 +49,9 @@
     nixos-hardware.url = "github:nixos/nixos-hardware";
 
     nixos-generators.url = "github:nix-community/nixos-generators";
+
+    rnix-lsp.url = "github:nix-community/rnix-lsp";
+    rnix-lsp.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
@@ -158,6 +161,7 @@
           /*
            set host-specific properties here
            */
+          nieel = {};
           Mac = {};
         };
         importables = rec {

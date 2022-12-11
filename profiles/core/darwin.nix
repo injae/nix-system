@@ -57,4 +57,9 @@
       eval "$(${pkgs.direnv}/bin/direnv hook bash)"
     '';
   };
+
+  programs.zsh = {
+    enable = true;
+    enableSyntaxHighlighting = true;
+  };
 }
