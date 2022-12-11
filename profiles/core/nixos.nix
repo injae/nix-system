@@ -55,7 +55,19 @@
     allowedUsers = ["@wheel"];
   };
 
-  programs.bash = {
+  #programs.bash = {
+  #  # Enable starship
+  #  promptInit = ''
+  #    eval "$(${pkgs.starship}/bin/starship init bash)"
+  #  '';
+  #  # Enable direnv, a tool for managing shell environments
+  #  interactiveShellInit = ''
+  #    eval "$(${pkgs.direnv}/bin/direnv hook bash)"
+  #  '';
+  #};
+  programs.zsh = {
+    enable = true;
+    enableSyntaxHighlighting = true;
     # Enable starship
     promptInit = ''
       eval "$(${pkgs.starship}/bin/starship init bash)"
