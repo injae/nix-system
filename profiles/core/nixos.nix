@@ -67,7 +67,7 @@
   #};
   programs.zsh = {
     enable = true;
-    enableSyntaxHighlighting = true;
+    syntaxHighlighting.enable = true;
     # Enable starship
     promptInit = ''
       eval "$(${pkgs.starship}/bin/starship init bash)"

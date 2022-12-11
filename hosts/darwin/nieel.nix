@@ -2,6 +2,7 @@
   config,
   pkgs,
   suites,
+  home-manager,
   ...
 }: {
   imports = with suites; base;
@@ -11,4 +12,9 @@
   environment.systemPackages = with pkgs; [
     mas
   ];
+
+  home-manager.users.nieel = {pkgs, ...}: {
+    home.packages = with pkgs; [
+    ];
+  };
 }

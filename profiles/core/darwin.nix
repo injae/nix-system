@@ -60,7 +60,7 @@
 
   programs.zsh = {
     enable = true;
-    enableSyntaxHighlighting = true;
+    syntaxHighlighting.enable = true;
     interactiveShellInit = ''
       eval "$(${pkgs.starship}/bin/starship init bash)"
       eval "$(${pkgs.direnv}/bin/direnv hook bash)"
