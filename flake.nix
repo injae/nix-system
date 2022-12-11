@@ -28,7 +28,7 @@
     digga.inputs.home-manager.follows = "home";
     digga.inputs.deploy.follows = "deploy";
 
-    home.url = "github:nix-community/home-manager/release-22.11";
+    home.url = "github:nix-community/home-manager/release-22.05";
     home.inputs.nixpkgs.follows = "nixos";
 
     darwin.url = "github:LnL7/nix-darwin";
