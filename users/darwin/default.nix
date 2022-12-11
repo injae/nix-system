@@ -1,7 +1,7 @@
 {hmUsers, ...}: {
   home-manager.users = {inherit (hmUsers) darwin;};
 
-  users.users.darwin = {
+  users.users.nieel = {
     name = "nieel";
     home = "/Users/nieel";
     description = "default";
