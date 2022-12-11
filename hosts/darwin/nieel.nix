@@ -19,7 +19,7 @@
     home.username = "nieel";
     home.homeDirectory = "/Users/nieel";
     home.packages = with pkgs; [
-
+      
     ];
     home.stateVersion = "22.11";
     programs.home-manager.enable = true;
