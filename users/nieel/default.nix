@@ -3,5 +3,7 @@
 
   users.users.nieel = {
     description = "default";
+    name = "nieel";
+    home = "/Users/nieel";
   };
 }
